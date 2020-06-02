@@ -23,7 +23,7 @@ The Support group can be reached out to at [Support](https://t.me/AnieSupport), 
 
 Rename `sample_config.yml` to `config.yml` 
 
-`lucifer_explain_config: "Ahhhhhhhhhhh i am not blind so i'll follow what the line above me asked"` replace this line ` Ahhhhhhhhhhh i am not blind so i'll follow what the line above me asked` with this `lucifer_probot`
+`Anie_explain_config: "Ahhhhhhhhhhh i am not blind so i'll follow what the line above me asked"` replace this line ` Ahhhhhhhhhhh i am not blind so i'll follow what the line above me asked` with this `Anierobot`
 
 
 The following env variables are supported:
