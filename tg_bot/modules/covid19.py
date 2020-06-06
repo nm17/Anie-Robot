@@ -114,7 +114,7 @@ __help__ = """
  - /cov top <n(integer)>: Get the top n countries with the highest confirmed cases.
 """
 
-__mod_name__ = 'COVID-19 Tracker'
+__mod_name__ = 'Covid-Tracker'
 
 COV_HANDLER = CommandHandler('cov', cov)
 
