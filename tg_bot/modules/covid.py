@@ -42,11 +42,15 @@ def covid(bot: Bot, update: Update):
 __help__ = """
  
  - /covid get worldwide corona status
+ - /cov <country> <state> <locality>: Get real time COVID-19 stats for the input location.
+ - /cov top <n(integer)>: Get the top n countries with the highest confirmed cases.
 """
 
-__mod_name__ = 'COVID-19'
+__mod_name__ = 'Covid-19'
 
 COVID_HANDLER = CommandHandler("covid", covid, admin_ok=True)
+COV_HANDLER = CommandHandler('cov', cov)
+dispatcher.add_handler(COV_HANDLER)
 dispatcher.add_handler(COVID_HANDLER)
 
 
