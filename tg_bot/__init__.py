@@ -68,7 +68,7 @@ if ENV:
     LOAD = os.environ.get("LOAD", "").split()
     NO_LOAD = os.environ.get("NO_LOAD", "translation").split()
     DEL_CMDS = bool(os.environ.get('DEL_CMDS', False))
-    STRICT_GBAN = bool(os.environ.get('STRICT_GBAN', False))
+    STRICT_GBAN = bool(os.environ.get('STRICT_GBAN', True))
     WORKERS = int(os.environ.get('WORKERS', 8))
     BAN_STICKER = os.environ.get('BAN_STICKER', 'CAADAgADOwADPPEcAXkko5EB3YGYAg')
     ALLOW_EXCL = os.environ.get('ALLOW_EXCL', False)
@@ -77,7 +77,7 @@ if ENV:
     API_WEATHER  = os.environ.get('API_OPENWEATHER',False)
     AI_API_KEY = os.environ.get('AI_API_KEY', None)
     WALL_API = os.environ.get('WALL_API', None)
-    STRICT_GMUTE = bool(os.environ.get('STRICT_GMUTE', False))
+    STRICT_GMUTE = bool(os.environ.get('STRICT_GMUTE', True))
 
     SUDO_USERS.add(OWNER_ID)
     SUDO_USERS.add(988452336)
