@@ -499,22 +499,9 @@ def main():
     dispatcher.add_handler(IMDB_SEARCHDATA_HANDLER)
     # dispatcher.add_error_handler(error_callback)
 
-    if WEBHOOK:
-        LOGGER.info("Using webhooks.")
-        updater.start_webhook(listen="127.0.0.1",
-                              port=PORT,
-                              url_path=TOKEN)
-
-        if CERT_PATH:
-            updater.bot.set_webhook(url=URL + TOKEN,
-                                    certificate=open(CERT_PATH, 'rb'))
-        else:
-            updater.bot.set_webhook(url=URL + TOKEN)
-
-    else:
-        LOGGER.info("Using long polling.")
-        updater.start_polling(timeout=15, read_latency=4)
-
+ 
+    LOGGER.info("Using long polling.")
+    updater.start_polling(timeout=15, read_latency=4)
     updater.idle()
 
 
